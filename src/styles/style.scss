@@ -1,6 +1,7 @@
 @import './materialize.scss';
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
 
 .icon-block {
   padding: 0 15px;
@@ -24,13 +25,14 @@ h1 {
 h2 {
 
 	font-weight: $bold-weight;
+	font-family: 'Kumar One Outline', cursive;
 
 }
 
 h3 {
 
 	font-weight: $bold-weight;
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Gentium Basic', serif;
 
 }
 
@@ -42,7 +44,7 @@ h4 {
 }
 
 h5 {
-
+	font-family: 'Gentium Basic', serif;
 	font-weight: $medium-weight;
 
 }
