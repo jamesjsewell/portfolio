@@ -30,10 +30,28 @@ const LandingPage = React.createClass({
 			
 			return (
 
-		 		<div className=''>
+		 		<div className='blue-grey lighten-3'>
 
-		 			<div className='card green accent-4'>
-		 				<h3 className='card-content white-text'>james</h3>
+		 			<div className='row'>
+
+		 				<div className='col s12 m6'>
+		 		
+		 					<div className='card blue-grey darken-4'>
+
+				 				<div className="card-content white-text flow-text">
+
+				 					<h3 className='blue-grey darken-3 card-title'><i className="medium material-icons">insert_chart</i>JAMES</h3>
+				 				
+				 					<p>lorem ipsum dom ado aid oaa oado adoia oadi adfado dsfd fdfso adfdso ad dooa addo a adddo adooa ado adoo adoo adaod</p>
+
+				 					<a className="waves-effect waves-light btn deep-orange"><i className="material-icons left">cloud</i>button</a>
+
+				 				</div>
+
+		 					</div>
+
+		 				</div>
+
 		 			</div>
 
 		 		</div>

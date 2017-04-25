@@ -1,4 +1,6 @@
 @import './materialize.scss';
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
 
 .icon-block {
   padding: 0 15px;
@@ -6,4 +8,57 @@
 
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+$thin-weight: 100;
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$bold-weight: 600;
+
+h1 {
+
+
+}
+
+h2 {
+
+	font-weight: $bold-weight;
+
+}
+
+h3 {
+
+	font-weight: $bold-weight;
+	font-family: 'Fjalla One', sans-serif;
+
+}
+
+h4 {
+
+	font-weight: $bold-weight;
+	font-style: italic;
+
+}
+
+h5 {
+
+	font-weight: $medium-weight;
+
+}
+
+h6 {
+
+	font-weight: $regular-weight;
+
+}
+
+p {
+
+	font-weight: $thin-weight;
+
+}
+
+.card-title {
+	font-family: 'Gentium Basic', serif;
 }
