@@ -1,12 +1,9 @@
 @import './materialize.scss';
 
-* {
-	font-family: Helvetica, Arial, sans-serif;
-	box-sizing: border-box;
+.icon-block {
+  padding: 0 15px;
 }
 
-h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+.icon-block .material-icons {
+	font-size: inherit;
 }
