@@ -32,6 +32,10 @@ const LandingPage = React.createClass({
 
 		 		<div className=''>
 
+		 			<div className='card green accent-4'>
+		 				<h3 className='card-content white-text'>james</h3>
+		 			</div>
+
 		 		</div>
 
 			)

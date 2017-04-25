@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Backbone from 'backbone'
 import init from './init'
-import LandingPage from '.views/landingPage.js'
+import LandingPage from './views/landingPage.js'
 
 
 const app = function() {
  
-	const   = Backbone.Router.extend({
+	const PortfolioRouter = Backbone.Router.extend({
 
 		routes: {
 
@@ -27,7 +27,7 @@ const app = function() {
 
 	})
 
-	new  
+	new PortfolioRouter
 	Backbone.history.start()
 
 }
