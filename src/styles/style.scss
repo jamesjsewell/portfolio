@@ -67,15 +67,34 @@ p {
 
 }
 
-.carousel{
-	width: 200rem;
-	margin: auto;
+.carousel-graphics{
+	
 	max-width: 100%;
+
 }
 
-.carousel-item{
-	width: 400px !important;
+.carousel-item-graphics{
+
+	
 	max-width: 100%;
 	height: auto;
+
 }
+
+.carousel-logos{
+
+	margin: auto;
+	max-width: 100%;
+
+}
+
+.carousel-item-logos, .img-tools{
+
+	margin: auto;
+	height: auto;
+	max-width: 100%;
+
+}
+
+
 
