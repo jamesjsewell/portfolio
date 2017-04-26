@@ -62,5 +62,20 @@ p {
 }
 
 .card-title {
+
 	font-family: 'Gentium Basic', serif;
+
 }
+
+.carousel{
+	width: 200rem;
+	margin: auto;
+	max-width: 100%;
+}
+
+.carousel-item{
+	width: 400px !important;
+	max-width: 100%;
+	height: auto;
+}
+

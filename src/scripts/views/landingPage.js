@@ -4,6 +4,7 @@ import ACTIONS from '../actions.js'
 import User from '../models/userModel.js'
 import Navbar from './components/navBar.js'
 
+
 const LandingPage = React.createClass({
 
 	componentWillMount: function(){
@@ -20,8 +21,20 @@ const LandingPage = React.createClass({
 
 	getInitialState: function() {
 
+
 		return STORE.data
 
+	},
+
+	componentDidMount: function() {
+
+		$('.carousel').carousel()
+		autoplay()   
+		function autoplay() {
+		    $('.carousel').carousel('next');
+		    setTimeout(autoplay, 2200);
+		}
+    	
 	},
 
  	render: function(){
@@ -30,16 +43,32 @@ const LandingPage = React.createClass({
 			
 			return (
 
-		 		<div className='deep-orange darken-4'>
+		 		<div className='grey darken-4'>
 
 		 			<div className='row'>
 
 		 				<div className='col s12 m6 offset-m3'>
 
-		 					<h2 className="center-align white-text">JAMES SEWELL</h2>
-		 					<h5 className="center-align white-text ">Front-end Engineer - Houston, Tx</h5>
+		 					<h2 className="blue-grey darken-3 center-align white-text">JAMES SEWELL</h2>
+		 					<h5 className="center-align white-text flow-text">Front-end Engineer - Houston, Tx</h5>
 
 		 				</div>
+
+		 			</div>
+
+		 			<div className='row'>
+
+		 				<div className='col s12'>
+
+			 				<div className="carousel">
+							    <a className="carousel-item" href="#one!"><img src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item" href="#two!"><img src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item" href="#three!"><img src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item" href="#four!"><img src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item" href="#five!"><img src="images/ironPongLogoWhiteV2.png" /></a>
+							</div>
+
+						</div>
 
 		 			</div>
 
