@@ -169,10 +169,11 @@ p {
 
 	iframe{
 
-		width: 100vw !important;
+		width: 50vw !important;
 		background: black;
 		margin: auto !important;
-		height: 100vh !important;
+		height: 100vw !important;
+		transition: 1s linear !important;
 
 	}
 
@@ -181,13 +182,19 @@ p {
 .active.materialboxed{
 	
 	left: 50% !important;
-	top: 50% !important;
-	transform: translate(-50%, -50%) !important;
+	top: 0% !important;
+	transform: translate(-50%, 0%) !important;
 	position: fixed !important;
 	width: 100vw !important;
-	margin: auto !important;
-	height: 100vh !important;
+	height: 100vw !important;
+	transition: .5s linear !important;
+	
+	
 
+}
+
+#materialbox-overlay{
+	background: rgba(0,0,0,.5);
 }
 
 
