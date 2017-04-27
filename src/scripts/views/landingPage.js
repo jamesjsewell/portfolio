@@ -45,106 +45,20 @@ const LandingPage = React.createClass({
 			
 			return (
 
-		 		<div className='grey darken-4'>
+				<div className="blue-grey darken-4">
+				<div className='row'>
 
-		 			<div className='row'>
+	 				<div className='col s12 m6 offset-m3'>
 
-		 				<div className='col s12 m6 offset-m3'>
+	 					<h2 className="blue-grey darken-3 center-align white-text">JAMES SEWELL</h2>
+	 					<h5 className="center-align white-text flow-text">Front-end Engineer - Houston, Tx</h5>
 
-		 					<h2 className="blue-grey darken-3 center-align white-text">JAMES SEWELL</h2>
-		 					<h5 className="center-align white-text flow-text">Front-end Engineer - Houston, Tx</h5>
+	 				</div>
 
-		 				</div>
-
-		 			</div>
-
-		 			<div className='row graphics-row container'>
-
-		 				<div className='col s12 blue-grey darken-4'>
-
-		 					<div className="card blue-grey darken-3">
-
-		 						<h3 className="card-content flow-text white-text center-align">Graphic Design</h3>
-
-		 						<div className="card-content blue-grey darken-3 col s12 m3">
-
-			 						<div className="logos">
-
-			 							<h4 className="white-text flow-text center-align"> Tools </h4>
-			 							<div className="logo1 col s4">
-			 								<img className="img-tools responsive-image" src="images/software_icons/ps_icon.png" />
-			 							</div>
-			 							<div className="logo1 col s4">
-			 								<img className="img-tools responsive-image" src="images/software_icons/ai_icon.png" />
-			 							</div>
-			 							<div className="logo1 col s4">
-			 								<img className="img-tools responsive-image" src="images/software_icons/blender_icon.png" />
-			 							</div>
-										
-									</div>
-
-			 						<span className="card-content"><p className="white-text flow-text">I produce digital assets using Photoshop CC, Illustrator CC, and Blender3D</p></span>
-
-			 					</div>
-
-			 					<div className="carousel carousel-graphics col s12 m9">
-
-								    <a className="carousel-item carousel-item-graphics" href="#one!"><img src="images/A-Cut-Above.jpg" /></a>
-								    <a className="carousel-item carousel-item-graphics" href="#two!"><img src="images/reverse-a-cut-above.jpg" /></a>
-								    <a className="carousel-item carousel-item-graphics" href="#three!"><img src="images/Community-Arts-Center.jpg" /></a>
-								    <a className="carousel-item carousel-item-graphics" href="#four!"><img src="images/envato-homepage-image.jpg" /></a>
-								    <a className="carousel-item carousel-item-graphics" href="#five!"><img src="images/ironPongLogoWhiteV2.png" /></a>
-								    <a className="carousel-item carousel-item-graphics" href="#five!"><img src="images/Mockup Tent - Copy/Tent3.png" /></a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-		 			</div>
-
-		 			<div className='row'>
-
-		 				<div className='col s12 m6'>
-		 		
-		 					<div className='card blue-grey darken-4'>
-
-				 				<div className="card-content white-text flow-text">
-
-				 					<h3 className='blue-grey darken-3 card-title'><i className="medium material-icons">insert_chart</i>JAMES</h3>
-				 				
-				 					<p>lorem ipsum dom ado aid oaa oado adoia oadi adfado dsfd fdfso adfdso ad dooa addo a adddo adooa ado adoo adoo adaod</p>
-
-				 					<a className="waves-effect waves-light btn deep-orange"><i className="material-icons left">cloud</i>button</a>
-
-				 				</div>
-
-		 					</div>
-
-		 				</div>
-
-		 				<div className='col s12 m6'>
-		 		
-		 					<div className='card blue-grey darken-4'>
-
-				 				<div className="card-content white-text flow-text">
-
-				 					<h3 className='blue-grey darken-3 card-title'><i className="medium material-icons">insert_chart</i>JAMES</h3>
-				 				
-				 					<p>lorem ipsum dom ado aid oaa oado adoia oadi adfado dsfd fdfso adfdso ad dooa addo a adddo adooa ado adoo adoo adaod</p>
-
-				 					<a className="waves-effect waves-light btn deep-orange"><i className="material-icons left">cloud</i>button</a>
-
-				 				</div>
-
-		 					</div>
-
-		 				</div>
-
-		 			</div>
-
-		 		</div>
+	 			</div>
+				<GraphicDesignPanel />
+				<WebDevPanel />
+				</div>
 
 			)
 
@@ -171,6 +85,126 @@ const LandingPage = React.createClass({
  		)	
  		
  	}
+
+})
+
+const GraphicDesignPanel = React.createClass({
+
+	render: function(){
+
+		return(
+
+	 			<div className='row graphics-row'>
+
+	 				<div className='col s12 blue-grey darken-4 center-align'>
+
+	 					<div className="card blue-grey darken-3">
+
+	 						<h3 className="card-content flow-text white-text center-align">Graphic Design</h3>
+
+	 						<div className="card-content container blue-grey darken-3 col s12 m5">
+
+		 						<div className="logos container col s12 center-align">
+
+		 							<h4 className="white-text flow-text center-align"> Tools </h4>
+		 							<div className="logo1 col s4 left-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/ps_icon.png" />
+		 							</div>
+		 							<div className="logo1 col s4 center-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/ai_icon.png" />
+		 							</div>
+		 							<div className="logo1 col s4 right-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/blender_icon.png" />
+		 							</div>
+									
+								</div>
+
+		 						<p className="row white-text flow-text">I produce digital assets using Adobe Photoshop CC, Adobe Illustrator CC, and Blender3D</p>
+
+		 					</div>
+
+		 					<div className="carousel card-content carousel-graphics col s12 m7">
+
+							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-image carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-image carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/your-lyrics.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-image carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+	 			</div>
+
+	 		
+
+		)
+
+	}
+
+})
+
+const WebDevPanel = React.createClass({
+
+	render: function(){
+
+		return(
+
+	 			<div className='row graphics-row'>
+
+	 				<div className='col s12 blue-grey darken-4 center-align'>
+
+	 					<div className="card blue-grey darken-3">
+
+	 						<h3 className="card-content flow-text white-text center-align">Web Development</h3>
+
+	 						<div className="card-content container blue-grey darken-3 col s12 m5">
+
+		 						<div className="logos container col s12 center-align">
+
+		 							<h4 className="white-text flow-text center-align"> Tools </h4>
+		 							<div className="logo1 col s4 left-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/ps_icon.png" />
+		 							</div>
+		 							<div className="logo1 col s4 center-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/ai_icon.png" />
+		 							</div>
+		 							<div className="logo1 col s4 right-align">
+		 								<img className="img-tools responsive-image" src="images/software_icons/blender_icon.png" />
+		 							</div>
+									
+								</div>
+
+		 						<p className="row white-text flow-text">I produce digital assets using Adobe Photoshop CC, Adobe Illustrator CC, and Blender3D</p>
+
+		 					</div>
+
+		 					<div className="carousel card-content carousel-graphics col s12 m7">
+
+							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-image carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-image carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/your-lyrics.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-image carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+	 			</div>
+
+		)
+
+	}
 
 })
 
