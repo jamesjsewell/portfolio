@@ -150,7 +150,7 @@ const GraphicDesignPanel = React.createClass({
 })
 
 const WebDevPanel = React.createClass({
-
+	
 	render: function(){
 
 		return(
@@ -159,11 +159,13 @@ const WebDevPanel = React.createClass({
 
  				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
- 					<div className="card blue-grey darken-3">
- 						<span className="white-text flow-text card-content card-title"><h4>Weather App</h4></span>
-	 					<iframe src="https://jamesjsewell.github.io/weather_app">
-							<p>Your browser does not support iframes.</p>
-						</iframe>
+ 					<div id="theColumn" className="card blue-grey darken-3">
+ 						
+	 					
+ 						<div id="frame" className="materialboxed">
+	 					<iframe className="theFrame responsive-img center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+						</div>
+
 						
 					</div>
 
@@ -171,23 +173,25 @@ const WebDevPanel = React.createClass({
 
 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
- 					<div className="card blue-grey darken-3">
- 						<span className="white-text flow-text card-content card-title"><h4>Todo List</h4></span>
-	 					<iframe src="https://dothething.herokuapp.com/">
-							<p>Your browser does not support iframes.</p>
-						</iframe>
-							
+ 					<div id="theColumn" className="card blue-grey darken-3">
+ 						
+	 					
+ 						<div id="frame" className="materialboxed">
+	 					<iframe className="theFrame responsive-img center-align" src="https://dothething.herokuapp.com/"></iframe>
+						</div>
+
+						
 					</div>
 
 				</div>
 
 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
- 					<div id="theColumn" className="responsive-img card blue-grey darken-3">
+ 					<div id="theColumn" className="card blue-grey darken-3">
  						
 	 					
- 						<div id="frame" className="responsive-img materialboxed">
-	 					<iframe className="responsive-img" src="https://gametally.herokuapp.com"></iframe>
+ 						<div id="frame" className="materialboxed">
+	 					<iframe className="theFrame responsive-img center-align" src="https://gametally.herokuapp.com"></iframe>
 						</div>
 
 						
