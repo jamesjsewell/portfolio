@@ -35,7 +35,7 @@ const LandingPage = React.createClass({
 		    setTimeout(autoplay, 2200);
 		}
 
-		$('.carousel-logos').carousel()
+    	$('.materialboxed').materialbox()
     	
 	},
 
@@ -108,13 +108,13 @@ const GraphicDesignPanel = React.createClass({
 
 		 							<h4 className="white-text flow-text center-align"> Tools </h4>
 		 							<div className="logo1 col s4 left-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/ps_icon.png" />
+		 								<img className="img-tools responsive-img" src="images/software_icons/ps_icon.png" />
 		 							</div>
 		 							<div className="logo1 col s4 center-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/ai_icon.png" />
+		 								<img className="img-tools responsive-img" src="images/software_icons/ai_icon.png" />
 		 							</div>
 		 							<div className="logo1 col s4 right-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/blender_icon.png" />
+		 								<img className="img-tools responsive-img" src="images/software_icons/blender_icon.png" />
 		 							</div>
 									
 								</div>
@@ -125,13 +125,13 @@ const GraphicDesignPanel = React.createClass({
 
 		 					<div data-indicators={true} className="carousel card-content carousel-graphics  col s12 m7">
 
-							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-image carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-image carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/your-lyrics.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-image carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-img carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-img carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-img carousel-graphic" src="images/your-lyrics.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-img carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-img carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-img carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
+							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-img carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
 
 							</div>
 
@@ -160,7 +160,7 @@ const WebDevPanel = React.createClass({
  				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
  					<div className="card blue-grey darken-3">
-
+ 						<span className="white-text flow-text card-content card-title"><h4>Weather App</h4></span>
 	 					<iframe src="https://jamesjsewell.github.io/weather_app">
 							<p>Your browser does not support iframes.</p>
 						</iframe>
@@ -172,7 +172,7 @@ const WebDevPanel = React.createClass({
 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
  					<div className="card blue-grey darken-3">
-
+ 						<span className="white-text flow-text card-content card-title"><h4>Todo List</h4></span>
 	 					<iframe src="https://dothething.herokuapp.com/">
 							<p>Your browser does not support iframes.</p>
 						</iframe>
@@ -183,11 +183,13 @@ const WebDevPanel = React.createClass({
 
 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
- 					<div className="card blue-grey darken-3">
+ 					<div id="theColumn" className="responsive-img card blue-grey darken-3">
+ 						
+	 					
+ 						<div id="frame" className="responsive-img materialboxed">
+	 					<iframe className="responsive-img" src="https://gametally.herokuapp.com"></iframe>
+						</div>
 
-	 					<iframe src="https://gametally.herokuapp.com">
-							<p>Your browser does not support iframes.</p>
-						</iframe>
 						
 					</div>
 
