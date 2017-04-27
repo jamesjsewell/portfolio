@@ -45,7 +45,7 @@ const LandingPage = React.createClass({
 			
 			return (
 
-				<div className="blue-grey darken-4">
+				<div className="grey darken-4">
 				<div className='row'>
 
 	 				<div className='col s12 m6 offset-m3'>
@@ -123,7 +123,7 @@ const GraphicDesignPanel = React.createClass({
 
 		 					</div>
 
-		 					<div className="carousel card-content carousel-graphics col s12 m7">
+		 					<div data-indicators={true} className="carousel card-content carousel-graphics  col s12 m7">
 
 							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-image carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
 							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-image carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
@@ -155,52 +155,45 @@ const WebDevPanel = React.createClass({
 
 		return(
 
-	 			<div className='row graphics-row'>
+ 			<div className='row web-row blue-grey darken-3'>
 
-	 				<div className='col s12 blue-grey darken-4 center-align'>
+ 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div className="card blue-grey darken-3">
+ 					<div className="card blue-grey darken-3">
 
-	 						<h3 className="card-content flow-text white-text center-align">Web Development</h3>
-
-	 						<div className="card-content container blue-grey darken-3 col s12 m5">
-
-		 						<div className="logos container col s12 center-align">
-
-		 							<h4 className="white-text flow-text center-align"> Tools </h4>
-		 							<div className="logo1 col s4 left-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/ps_icon.png" />
-		 							</div>
-		 							<div className="logo1 col s4 center-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/ai_icon.png" />
-		 							</div>
-		 							<div className="logo1 col s4 right-align">
-		 								<img className="img-tools responsive-image" src="images/software_icons/blender_icon.png" />
-		 							</div>
-									
-								</div>
-
-		 						<p className="row white-text flow-text">I produce digital assets using Adobe Photoshop CC, Adobe Illustrator CC, and Blender3D</p>
-
-		 					</div>
-
-		 					<div className="carousel card-content carousel-graphics col s12 m7">
-
-							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-image carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-image carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/your-lyrics.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-image carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-image carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-image carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
-
-							</div>
-
-						</div>
-
+	 					<iframe src="https://jamesjsewell.github.io/weather_app">
+							<p>Your browser does not support iframes.</p>
+						</iframe>
+						
 					</div>
 
-	 			</div>
+				</div>
+
+				<div className='col s12 m4 blue-grey darken-4 center-align'>
+
+ 					<div className="card blue-grey darken-3">
+
+	 					<iframe src="https://dothething.herokuapp.com/">
+							<p>Your browser does not support iframes.</p>
+						</iframe>
+							
+					</div>
+
+				</div>
+
+				<div className='col s12 m4 blue-grey darken-4 center-align'>
+
+ 					<div className="card blue-grey darken-3">
+
+	 					<iframe src="https://gametally.herokuapp.com">
+							<p>Your browser does not support iframes.</p>
+						</iframe>
+						
+					</div>
+
+				</div>
+
+ 			</div>
 
 		)
 
