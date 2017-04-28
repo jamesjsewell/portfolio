@@ -163,7 +163,6 @@ const WebDevPanel = React.createClass({
 		return(
 
  			<div className='row web-row blue-grey darken-4 container'>
- 				
  					
  					<div className="card blue-grey darken-3">
 
@@ -179,6 +178,26 @@ const WebDevPanel = React.createClass({
 		 					<button data-target="modal1" class="btn">View</button>
 	 						<div id="modal1" className="modal preview-modal container center-align">
 	 						<button onClick={function(){$('#modal1').modal('close')}} class="btn modal-content">Close</button>
+		 					<iframe className="modal-content center-align" src="https://gametally.herokuapp.com"></iframe>
+							</div>
+
+							<div id="frame" className="frame">
+		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
+							</div>
+
+							
+						</div>
+
+					</div>
+
+					<div className='col s12 m4 blue-grey darken-4 center-align'>
+
+	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
+	 						
+		 					
+	 						<button data-target="modal2" class="btn">View</button>
+	 						<div id="modal2" className="modal preview-modal container center-align">
+	 						<button onClick={function(){$('#modal2').modal('close')}} class="btn modal-content">Close</button>
 		 					<iframe className="modal-content center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 							</div>
 
@@ -196,22 +215,14 @@ const WebDevPanel = React.createClass({
 	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
 	 						
 		 					
-	 						<div id="frame" className="materialboxed">
-		 					<iframe className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
+	 						<button data-target="modal3" class="btn">View</button>
+	 						<div id="modal3" className="modal preview-modal container center-align">
+	 						<button onClick={function(){$('#modal3').modal('close')}} class="btn modal-content">Close</button>
+		 					<iframe className="modal-content center-align" src="https://dothething.herokuapp.com/"></iframe>
 							</div>
 
-							
-						</div>
-
-					</div>
-
-					<div className='col s12 m4 blue-grey darken-4 center-align'>
-
-	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
-	 						
-		 					
-	 						<div id="frame" className="materialboxed">
-		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
+							<div id="frame" className="frame">
+		 					<iframe className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
 							</div>
 
 							
