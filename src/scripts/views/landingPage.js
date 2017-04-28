@@ -3,6 +3,7 @@ import STORE from '../store.js'
 import ACTIONS from '../actions.js'
 import User from '../models/userModel.js'
 import Navbar from './components/navBar.js'
+import Footer from './components/footer.js'
 
 
 const LandingPage = React.createClass({
@@ -59,6 +60,7 @@ const LandingPage = React.createClass({
 
 	 			<WebDevPanel />
 				<GraphicDesignPanel />
+				<Footer />
 				
 				</div>
 
@@ -102,7 +104,7 @@ const GraphicDesignPanel = React.createClass({
 
 	 					<div className="card blue-grey darken-3">
 
-	 						<h3 className="card-content flow-text white-text center-align">Graphic Design</h3>
+	 						<h3 className="card-content flow-text white-text left-align">Graphic Design</h3>
 
 	 						<div className="card-content container blue-grey darken-3 col s12 m5">
 
@@ -162,7 +164,7 @@ const WebDevPanel = React.createClass({
  					
  					<div className="card blue-grey darken-3">
 
- 						<h3 className="card-content flow-text white-text center-align">Web Development</h3>
+ 						<h3 className="card-content flow-text white-text left-align-align">Web Development</h3>
 
  					</div>
 
