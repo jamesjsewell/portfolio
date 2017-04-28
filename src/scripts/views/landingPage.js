@@ -56,8 +56,10 @@ const LandingPage = React.createClass({
 	 				</div>
 
 	 			</div>
+
+	 			<WebDevPanel />
 				<GraphicDesignPanel />
-				<WebDevPanel />
+				
 				</div>
 
 			)
@@ -94,7 +96,7 @@ const GraphicDesignPanel = React.createClass({
 
 		return(
 
-	 			<div className='row graphics-row'>
+	 			<div className='row graphics-row container'>
 
 	 				<div className='col s12 blue-grey darken-4 center-align'>
 
@@ -155,49 +157,58 @@ const WebDevPanel = React.createClass({
 
 		return(
 
- 			<div className='row web-row blue-grey darken-3'>
+ 			<div className='row web-row blue-grey darken-4 container'>
+ 				
+ 					
+ 					<div className="card blue-grey darken-3">
 
- 				<div className='col s12 m4 blue-grey darken-4 center-align'>
+ 						<h3 className="card-content flow-text white-text center-align">Web Development</h3>
 
- 					<div id="theColumn" className="card blue-grey darken-3">
- 						
-	 					
- 						<div id="frame" className="materialboxed">
-	 					<iframe className="theFrame responsive-img center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+ 					</div>
+
+	 				<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
+
+	 					<div id="theColumn" className="card blue-grey darken-3">
+	 						
+		 					
+	 						<div id="frame" className="material-placeholder materialboxed">
+		 					<iframe className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+							</div>
+
+							
 						</div>
 
-						
 					</div>
 
-				</div>
+					<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
 
-				<div className='col s12 m4 blue-grey darken-4 center-align'>
+	 					<div id="theColumn" className="card blue-grey darken-3">
+	 						
+		 					
+	 						<div id="frame" className="materialboxed">
+		 					<iframe className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
+							</div>
 
- 					<div id="theColumn" className="card blue-grey darken-3">
- 						
-	 					
- 						<div id="frame" className="materialboxed">
-	 					<iframe className="theFrame responsive-img center-align" src="https://dothething.herokuapp.com/"></iframe>
+							
 						</div>
 
-						
 					</div>
 
-				</div>
+					<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
 
-				<div className='col s12 m4 blue-grey darken-4 center-align'>
+	 					<div id="theColumn" className="card blue-grey darken-3">
+	 						
+		 					
+	 						<div id="frame" className="materialboxed">
+		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
+							</div>
 
- 					<div id="theColumn" className="card blue-grey darken-3">
- 						
-	 					
- 						<div id="frame" className="materialboxed">
-	 					<iframe className="theFrame responsive-img center-align" src="https://gametally.herokuapp.com"></iframe>
+							
 						</div>
 
-						
 					</div>
 
-				</div>
+				
 
  			</div>
 

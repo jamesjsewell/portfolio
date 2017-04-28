@@ -17,6 +17,10 @@ $regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 600;
 
+html{
+	background: #212121;
+}
+
 h1 {
 
 
@@ -173,7 +177,7 @@ p {
 		background: black;
 		margin: auto !important;
 		height: 100vw !important;
-		transition: 1s linear !important;
+		transition: .3s linear !important;
 
 	}
 
@@ -187,7 +191,7 @@ p {
 	position: fixed !important;
 	width: 100vw !important;
 	height: 100vw !important;
-	transition: .5s linear !important;
+	/*transition: .5s linear !important;*/
 	
 	
 

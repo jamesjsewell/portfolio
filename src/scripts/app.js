@@ -11,8 +11,13 @@ const app = function() {
 
 		routes: {
 
-			'home': 'renderLandingPage'
+			'home': 'renderLandingPage',
+			'*splat': '_redirect'
 
+		},
+
+		_redirect: function(){
+			this.renderLandingPage()
 		},
 
 		renderLandingPage: function(){
