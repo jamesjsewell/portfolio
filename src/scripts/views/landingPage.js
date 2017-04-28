@@ -36,7 +36,10 @@ const LandingPage = React.createClass({
 		    setTimeout(autoplay, 2200);
 		}
 
-    	$('.materialboxed').materialbox()
+    	$('.materialboxed').materialbox({
+		dismissible: false
+	})
+    	$('.modal').modal()
     	
 	},
 
@@ -168,12 +171,18 @@ const WebDevPanel = React.createClass({
 
  					</div>
 
-	 				<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
+	 				<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="card blue-grey darken-3">
+	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
 	 						
-		 					
-	 						<div id="frame" className="material-placeholder materialboxed">
+	 						 
+		 					<button data-target="modal1" class="btn">View</button>
+	 						<div id="modal1" className="modal preview-modal container center-align">
+	 						<button onClick={function(){$('#modal1').modal('close')}} class="btn modal-content">Close</button>
+		 					<iframe className="modal-content center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+							</div>
+
+							<div id="frame" className="frame">
 		 					<iframe className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 							</div>
 
@@ -182,9 +191,9 @@ const WebDevPanel = React.createClass({
 
 					</div>
 
-					<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
+					<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="card blue-grey darken-3">
+	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
 	 						
 		 					
 	 						<div id="frame" className="materialboxed">
@@ -196,9 +205,9 @@ const WebDevPanel = React.createClass({
 
 					</div>
 
-					<div className='card-content col s12 m4 blue-grey darken-4 center-align'>
+					<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="card blue-grey darken-3">
+	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
 	 						
 		 					
 	 						<div id="frame" className="materialboxed">

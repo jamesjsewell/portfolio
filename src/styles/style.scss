@@ -201,6 +201,31 @@ p {
 	background: rgba(0,0,0,.5);
 }
 
+.modal.preview_modal.open{
+	width: 90vw !important;
+	height: 90vh !important;
+}
+#modal1{
+
+	width: 100%;
+	height: 100%;
+	transition: .3s ease all;
+
+	iframe{
+		text-align: center;
+		margin: auto;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	button{
+		position: fixed;
+		top: 1%;
+		left: 90%;
+	}
+
+
+}
 
 
 
