@@ -162,60 +162,80 @@ const WebDevPanel = React.createClass({
 
 		return(
 
- 			<div className='row web-row blue-grey darken-4 container'>
+ 			<div className='z-depth-1 row web-row blue-grey darken-4 container'>
  					
- 					<div className="card blue-grey darken-3">
+ 					<div className="z-depth-2 card blue-grey darken-3">
 
  						<h3 className="card-content flow-text white-text left-align-align">Web Development</h3>
 
  					</div>
 
-	 				<div className='col s12 m4 blue-grey darken-4 center-align'>
+	 				<div className='container col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
-	 						
-	 						 
-		 					<button data-target="modal1" class="btn">View</button>
+	 					<div className="white-text center-align card card-title z-depth-4 blue-grey darken-3">
+							<p className="flow-text">isa project</p>
+						</div>
+
+	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
+		 					
 	 						<div id="modal1" className="modal preview-modal container center-align">
-	 						<button onClick={function(){$('#modal1').modal('close')}} class="btn modal-content">Close</button>
+	 						<button onClick={function(){$('#modal1').modal('close')}} className="btn modal-content">Close</button>
 		 					<iframe className="modal-content center-align" src="https://gametally.herokuapp.com"></iframe>
 							</div>
 
 							<div id="frame" className="frame">
 		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
 							</div>
+							<button data-target="modal1" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 
 							
+						</div>
+						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
 
 					<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
+						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+							<p className="flow-text">isa project</p>
+						</div>
+
+	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
 	 						
 		 					
-	 						<button data-target="modal2" class="btn">View</button>
+	 						
 	 						<div id="modal2" className="modal preview-modal container center-align">
 	 						<button onClick={function(){$('#modal2').modal('close')}} class="btn modal-content">Close</button>
 		 					<iframe className="modal-content center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 							</div>
 
-							<div id="frame" className="frame">
+							<div id="frame" className="frame z-depth-4">
 		 					<iframe className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+
 							</div>
+							<button data-target="modal2" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
+
 
 							
+						</div>
+						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
 
 					<div className='col s12 m4 blue-grey darken-4 center-align'>
 
-	 					<div id="theColumn" className="blue-grey darken-3 material-placeholdeer">
+						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+							<p className="flow-text">isa project</p>
+						</div>
+
+	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
 	 						
 		 					
-	 						<button data-target="modal3" class="btn">View</button>
+	 						
 	 						<div id="modal3" className="modal preview-modal container center-align">
 	 						<button onClick={function(){$('#modal3').modal('close')}} class="btn modal-content">Close</button>
 		 					<iframe className="modal-content center-align" src="https://dothething.herokuapp.com/"></iframe>
@@ -224,8 +244,12 @@ const WebDevPanel = React.createClass({
 							<div id="frame" className="frame">
 		 					<iframe className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
 							</div>
-
+							<button data-target="modal3" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 							
+						</div>
+
+						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
