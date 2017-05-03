@@ -34,7 +34,7 @@ const Footer = React.createClass({
   render: function(){
 
     return (
-      <footer className="page-footer blue-grey darken-3 container">
+      <footer className="page-footer grey darken-2 container">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -52,7 +52,7 @@ const Footer = React.createClass({
               </div>
             </div>
           </div>
-          <div className="footer-copyright blue-grey darken-4">
+          <div className="footer-copyright grey darken-3">
             <div className="container">
             © 2014 Copyright Text
             <a className="grey-text text-lighten-4 right" href="#!">More Links</a>

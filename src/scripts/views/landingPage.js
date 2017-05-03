@@ -54,8 +54,8 @@ const LandingPage = React.createClass({
 
 	 				<div className='col s12 m6 offset-m3'>
 
-	 					<h2 className="blue-grey darken-3 center-align white-text">JAMES SEWELL</h2>
-	 					<h5 className="center-align white-text flow-text">Front-end Engineer - Houston, Tx</h5>
+	 					<h2 className="transparent center-align white-text z-depth-5">JAMES SEWELL</h2>
+	 					<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer - Houston, Tx</h5>
 
 	 				</div>
 
@@ -103,13 +103,13 @@ const GraphicDesignPanel = React.createClass({
 
 	 			<div className='row graphics-row container'>
 
-	 				<div className='col s12 blue-grey darken-4 center-align'>
+	 				<div className='col s12 grey darken-3 center-align'>
 
-	 					<div className="card blue-grey darken-3">
+	 					<div className="card grey darken-2">
 
 	 						<h3 className="card-content flow-text white-text left-align">Graphic Design</h3>
 
-	 						<div className="card-content container blue-grey darken-3 col s12 m5">
+	 						<div className="card-content container grey darken-2 col s12 m5">
 
 		 						<div className="logos container col s12 center-align">
 
@@ -162,24 +162,24 @@ const WebDevPanel = React.createClass({
 
 		return(
 
- 			<div className='z-depth-1 row web-row blue-grey darken-4 container'>
+ 			<div className='row web-row transparent container'>
  					
- 					<div className="z-depth-2 card blue-grey darken-3">
+ 					<div className="z-depth-2 card grey darken-2">
 
  						<h3 className="card-content flow-text white-text left-align-align">Web Development</h3>
 
  					</div>
 
-	 				<div className='container col s12 m4 blue-grey darken-4 center-align'>
+	 				<div className='container col s12 m4 center-align'>
 
-	 					<div className="white-text center-align card card-title z-depth-4 blue-grey darken-3">
+	 					<div className="white-text center-align card z-depth-4 grey darken-2">
 							<p className="flow-text">isa project</p>
 						</div>
 
-	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
+	 					<div id="theColumn" className="z-depth-4 transparent material-placeholdeer">
 		 					
 	 						<div id="modal1" className="modal preview-modal container center-align">
-	 						<button onClick={function(){$('#modal1').modal('close')}} className="btn modal-content">Close</button>
+	 						<button onClick={function(){$('#modal1').modal('close')}} className="btn-floating btn-large waves-effect waves-light z-depth-5 modal-content"><i className="material-icons center-align">zoom_out</i></button>
 		 					<iframe className="modal-content center-align" src="https://gametally.herokuapp.com"></iframe>
 							</div>
 
@@ -187,24 +187,21 @@ const WebDevPanel = React.createClass({
 		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
 							</div>
 							<button data-target="modal1" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
-
 							
 						</div>
-						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+						<div className="white-text center-align card z-depth-4 grey darken-3">
 							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
 
-					<div className='col s12 m4 blue-grey darken-4 center-align'>
+					<div className='col s12 m4 center-align'>
 
-						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+						<div className="white-text center-align card z-depth-4 grey darken-2">
 							<p className="flow-text">isa project</p>
 						</div>
 
-	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
-	 						
-		 					
+	 					<div id="theColumn" className="z-depth-4 transparent material-placeholdeer">
 	 						
 	 						<div id="modal2" className="modal preview-modal container center-align">
 	 						<button onClick={function(){$('#modal2').modal('close')}} class="btn modal-content">Close</button>
@@ -216,25 +213,21 @@ const WebDevPanel = React.createClass({
 
 							</div>
 							<button data-target="modal2" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
-
-
 							
 						</div>
-						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+						<div className="white-text center-align card z-depth-4 grey darken-3">
 							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
 
-					<div className='col s12 m4 blue-grey darken-4 center-align'>
+					<div className='col s12 m4 center-align'>
 
-						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+						<div className="white-text center-align card z-depth-4 grey darken-2">
 							<p className="flow-text">isa project</p>
 						</div>
 
-	 					<div id="theColumn" className="z-depth-4 blue-grey darken-3 material-placeholdeer">
-	 						
-		 					
+	 					<div id="theColumn" className="z-depth-4 material-placeholdeer">
 	 						
 	 						<div id="modal3" className="modal preview-modal container center-align">
 	 						<button onClick={function(){$('#modal3').modal('close')}} class="btn modal-content">Close</button>
@@ -248,13 +241,11 @@ const WebDevPanel = React.createClass({
 							
 						</div>
 
-						<div className="white-text center-align card z-depth-4 blue-grey darken-3">
+						<div className="white-text center-align card z-depth-4 grey darken-3">
 							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
 						</div>
 
 					</div>
-
-				
 
  			</div>
 

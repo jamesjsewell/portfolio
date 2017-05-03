@@ -14,8 +14,6 @@ $regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 600;
 
-
-
 html{
 	background: #212121;
 }
@@ -189,8 +187,6 @@ p {
 	width: 100vw !important;
 	height: 100vw !important;
 	/*transition: .5s linear !important;*/
-	
-	
 
 }
 
@@ -214,8 +210,27 @@ p {
 
 	button{
 		position: fixed;
-		top: 1%;
-		left: 90%;
+		top: 8%;
+		left: 95%;
+
+		background: rgba(0,0,0,.5) !important;
+		width: 6rem !important;
+		height: 6rem !important;
+		color: white;
+		position: absolute;
+		padding: auto !important;
+		transform: translate(-50%, -50%);
+		border: .2rem solid white !important;
+
+		i{
+			position: absolute;
+			line-height: 100%;
+			left: 50%;
+			top: 50%;
+			padding: auto !important;
+			transform: translate(-50%, -50%);
+			font-size: 4rem;
+		}
 	}
 
 
