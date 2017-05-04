@@ -196,7 +196,7 @@ const WebDevPanel = React.createClass({
 	 				<div className='container col s12 m4 center-align'>
 
 	 					<div className="white-text center-align card z-depth-4 grey darken-2">
-							<p className="flow-text">full-stack score tracking app</p>
+							<p className="flow-text">score tracking app</p>
 						</div>
 
 	 					<div id="theColumn" className="z-depth-4 transparent material-placeholdeer">
