@@ -42,7 +42,7 @@ const Footer = React.createClass({
 
               <div className="col l6 s12">
                 <h5 className="white-text">About this website</h5>
-                <p className="grey-text text-lighten-4">I created this website using React, and MaterializeCSS. I started with my instructor's custom boilerplate generator called maestro: <a href="https://github.com/magentanova/maestro">github repo</a></p>
+                <p className="grey-text text-lighten-4">I created this website using React, and MaterializeCSS. I started with my instructor's custom boilerplate generator called maestro: <a href="https://github.com/magentanova/maestro">maestro repo</a></p>
               </div>
               
               <div className="col l4 offset-l2 s12">
