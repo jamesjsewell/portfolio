@@ -194,6 +194,9 @@ p {
 	background: rgba(0,0,0,.5);
 }
 
+iframe.modal-content.center-align{
+	padding: .2rem !important;
+}
 
 #modal1,#modal2,#modal3{
 
@@ -210,26 +213,25 @@ p {
 
 	button{
 		position: fixed;
-		top: 8%;
+		top: 1.5%;
 		left: 95%;
 
 		background: rgba(0,0,0,.5) !important;
-		width: 6rem !important;
-		height: 6rem !important;
+		width: 1rem !important;
+		height: 1rem !important;
 		color: white;
 		position: absolute;
 		padding: auto !important;
-		transform: translate(-50%, -50%);
 		border: .2rem solid white !important;
 
 		i{
 			position: absolute;
 			line-height: 100%;
-			left: 50%;
+			left: 30%;
 			top: 50%;
-			padding: auto !important;
 			transform: translate(-50%, -50%);
-			font-size: 4rem;
+			font-size: 3rem;
+			padding: auto !important;
 		}
 	}
 
