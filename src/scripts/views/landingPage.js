@@ -5,6 +5,7 @@ import User from '../models/userModel.js'
 import Navbar from './components/navBar.js'
 import Footer from './components/footer.js'
 
+var toDoDescription = false
 
 const LandingPage = React.createClass({
 
@@ -38,9 +39,31 @@ const LandingPage = React.createClass({
 
     	$('.materialboxed').materialbox({
 		dismissible: false
-	})
+		})
+
     	$('.modal').modal()
+
+    	$('.collapsible-toDo').collapsible({
     	
+    	onOpen:  function(el) { STORE._set({toDoDescription: true  }) },
+    	onClose: function(el) { STORE._set({toDoDescription: false }) } 
+    	
+		})
+
+		$('.collapsible-score').collapsible({
+    	
+    	onOpen:  function(el) { STORE._set({scoreDescription: true  }) },
+    	onClose: function(el) { STORE._set({scoreDescription: false }) } 
+    	
+		})
+
+		$('.collapsible-weather').collapsible({
+    	
+    	onOpen:  function(el) { STORE._set({weatherDescription: true  }) },
+    	onClose: function(el) { STORE._set({weatherDescription: false }) } 
+    	
+		})
+
 	},
 
  	render: function(){
@@ -61,7 +84,7 @@ const LandingPage = React.createClass({
 
 	 			</div>
 
-	 			<WebDevPanel />
+	 			<WebDevPanel toDoDescription={this.state.toDoDescription} scoreDescription={this.state.scoreDescription} weatherDescription={this.state.weatherDescription}  />
 				<GraphicDesignPanel />
 				<Footer />
 				
@@ -101,15 +124,15 @@ const GraphicDesignPanel = React.createClass({
 
 		return(
 
-	 			<div className='row graphics-row container'>
+	 			<div className='row graphics-row container z-depth-1'>
 
-	 				<div className='col s12 grey darken-3 center-align'>
+	 				<div className='col s12 grey darken-3 center-align z-depth-1'>
 
-	 					<div className="card grey darken-2">
+	 					<div className="card grey darken-2 z-depth-3">
 
 	 						<h3 className="card-content flow-text white-text left-align">Graphic Design</h3>
 
-	 						<div className="card-content container grey darken-2 col s12 m5">
+	 						<div className="card-content container grey darken-2 col s12 m5 z-depth-4">
 
 		 						<div className="logos container col s12 center-align">
 
@@ -162,18 +185,18 @@ const WebDevPanel = React.createClass({
 
 		return(
 
- 			<div className='row web-row transparent container'>
+ 			<div className='row web-row grey darken-3 container'>
  					
  					<div className="z-depth-2 card grey darken-2">
 
- 						<h3 className="card-content flow-text white-text left-align-align">Web Development</h3>
+ 						<h3 className="card-content flow-text white-text left-align-align">Web Development - Personal Projects</h3>
 
  					</div>
 
 	 				<div className='container col s12 m4 center-align'>
 
 	 					<div className="white-text center-align card z-depth-4 grey darken-2">
-							<p className="flow-text">isa project</p>
+							<p className="flow-text">full-stack score tracking app</p>
 						</div>
 
 	 					<div id="theColumn" className="z-depth-4 transparent material-placeholdeer">
@@ -189,48 +212,60 @@ const WebDevPanel = React.createClass({
 							<button data-target="modal1" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 							
 						</div>
-						<div className="white-text center-align card z-depth-4 grey darken-3">
-							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
-						</div>
+
+						<ul className="white-text center-align card z-depth-4 grey darken-3 collapsible-score" >
+
+							<li>
+      							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.scoreDescription ? 'remove' : 'add'}</i>description</div>
+      							<div className="collapsible-body"><span className="flow-text">This is a communal score tracking app that I built for my final project as a student at The Iron Yard. The UI was designed using React, Materialize-CSS, and some custom SCSS. Although my focus is front end engineering, I did learn how to deploy my own database using mongodb and write an api for it in node.</span></div>
+    						</li>
+							
+						</ul>
 
 					</div>
 
 					<div className='col s12 m4 center-align'>
 
 						<div className="white-text center-align card z-depth-4 grey darken-2">
-							<p className="flow-text">isa project</p>
+							<p className="flow-text">weather app</p>
 						</div>
 
 	 					<div id="theColumn" className="z-depth-4 transparent material-placeholdeer">
 	 						
 	 						<div id="modal2" className="modal preview-modal container center-align">
-	 						<button onClick={function(){$('#modal2').modal('close')}} class="btn modal-content">Close</button>
+	 						<button onClick={function(){$('#modal2').modal('close')}} className="btn-floating btn-large waves-effect waves-light z-depth-5 modal-content"><i className="material-icons">zoom_out</i></button>
 		 					<iframe className="modal-content center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 							</div>
 
-							<div id="frame" className="frame z-depth-4">
+							<div id="frame" className="frame">
 		 					<iframe className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 
 							</div>
 							<button data-target="modal2" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 							
 						</div>
-						<div className="white-text center-align card z-depth-4 grey darken-3">
-							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
-						</div>
+				
+						<ul className="white-text center-align card z-depth-4 grey darken-3 collapsible-weather" >
+
+							<li>
+      							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.weatherDescription ? 'remove' : 'add'}</i>description</div>
+      							<div className="collapsible-body"><span className="flow-text">My assignment here was to write an application that consumes the DarkSky API. The UI was designed using pure css.</span></div>
+    						</li>
+							
+						</ul>
 
 					</div>
 
-					<div className='col s12 m4 center-align'>
+					<div className='col s12 m4 center-align' >
 
 						<div className="white-text center-align card z-depth-4 grey darken-2">
-							<p className="flow-text">isa project</p>
+							<p className="flow-text">full-stack to-do list app</p>
 						</div>
 
 	 					<div id="theColumn" className="z-depth-4 material-placeholdeer">
 	 						
 	 						<div id="modal3" className="modal preview-modal container center-align">
-	 						<button onClick={function(){$('#modal3').modal('close')}} class="btn modal-content">Close</button>
+	 						<button onClick={function(){$('#modal3').modal('close')}} className="btn-floating btn-large waves-effect waves-light z-depth-5 modal-content"><i className="material-icons">zoom_out</i></button>
 		 					<iframe className="modal-content center-align" src="https://dothething.herokuapp.com/"></iframe>
 							</div>
 
@@ -241,9 +276,14 @@ const WebDevPanel = React.createClass({
 							
 						</div>
 
-						<div className="white-text center-align card z-depth-4 grey darken-3">
-							<p className="flow-text">lololofs dsfsadf sdfsd dsfdsafdas dsfsdas dsadf dfsasdsdf sdfsadf sdfsd asddsdf sadds sdfsdsdd sdfsda sdadfdsf sdsdfadasd safsafdsfdsa asdfds sdsfasdf</p>
-						</div>
+						<ul className="white-text center-align card z-depth-4 grey darken-3 collapsible-toDo" >
+
+							<li>
+      							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.toDoDescription ? 'remove' : 'add'}</i>description</div>
+      							<div className="collapsible-body"><span className="flow-text">This is my first attempt at creating a full stack app. The todo's are persistent and live in a mongo database that I wrote an API for using express for node. The UI was built using React and styled with scss</span></div>
+    						</li>
+							
+						</ul>
 
 					</div>
 

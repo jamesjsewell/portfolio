@@ -5,6 +5,10 @@ const STORE = Object.assign({}, Backbone.Events, {
 
 	data: {
 
+		toDoDescription: false,
+		scoreDescription: false,
+		weatherDescription: false
+
 	},
 
 	get: function(prop) {
