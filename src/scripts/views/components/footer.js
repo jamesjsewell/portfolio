@@ -33,15 +33,17 @@ const Footer = React.createClass({
 
   render: function(){
 
-    //<div className="col l6 s12">
-      //<h5 className="white-text">Footer Content</h5>
-      //<p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-    //</div>
+    
 
     return (
       <footer className="page-footer grey darken-2 container z-depth-1">
           <div className="container">
             <div className="row">
+
+              <div className="col l6 s12">
+                <h5 className="white-text">About this website</h5>
+                <p className="grey-text text-lighten-4">I created this website using React, and MaterializeCSS. I started with my instructor's custom boilerplate generator called maestro: <a href="https://github.com/magentanova/maestro">github repo</a></p>
+              </div>
               
               <div className="col l4 offset-l2 s12">
                 <h5 className="white-text">Social Media</h5>

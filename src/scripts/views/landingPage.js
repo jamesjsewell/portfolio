@@ -124,11 +124,11 @@ const GraphicDesignPanel = React.createClass({
 
 		return(
 
-	 			<div className='row graphics-row container z-depth-1'>
+	 			<div className='row graphics-row container'>
 
 	 				<div className='col s12 grey darken-3 center-align z-depth-1'>
 
-	 					<div className="card grey darken-2 z-depth-3">
+	 					<div className="card grey darken-2">
 
 	 						<h3 className="card-content flow-text white-text left-align">Graphic Design</h3>
 
@@ -153,15 +153,15 @@ const GraphicDesignPanel = React.createClass({
 
 		 					</div>
 
-		 					<div data-indicators={true} className="carousel card-content carousel-graphics  col s12 m7">
+		 					<div data-indicators={true} className="carousel card-content carousel-graphics col s12 m7">
 
-							    <a className="carousel-item carousel-item-graphics" href="#one!"><img className="responsive-img carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#two!"><img className="responsive-img carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-img carousel-graphic" src="images/your-lyrics.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#three!"><img className="responsive-img carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#four!"><img className="responsive-img carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-img carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
-							    <a className="carousel-item carousel-item-graphics" href="#five!"><img className="responsive-img carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#one!"><img className="responsive-img carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#two!"><img className="responsive-img carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#three!"><img className="responsive-img carousel-graphic" src="images/your-lyrics.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#three!"><img className="responsive-img carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#four!"><img className="responsive-img carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#five!"><img className="responsive-img carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#five!"><img className="responsive-img carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
 
 							</div>
 
@@ -249,7 +249,7 @@ const WebDevPanel = React.createClass({
 
 							<li>
       							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.weatherDescription ? 'remove' : 'add'}</i>description</div>
-      							<div className="collapsible-body"><span className="flow-text">My assignment here was to write an application that consumes the DarkSky API. The UI was designed using pure css.</span></div>
+      							<div className="collapsible-body"><span className="flow-text">My assignment here was to write an application that consumes the DarkSky API. The UI was designed using javascript and vanilla css.</span></div>
     						</li>
 							
 						</ul>
