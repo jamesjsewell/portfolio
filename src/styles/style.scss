@@ -115,7 +115,7 @@ p {
 	
 	width: 1440px;
 	height: 900px;
-	
+	overflow: hidden;
 
 }
 
@@ -129,6 +129,7 @@ p {
 	-o-transform-origin: 0 0;
 	-webkit-transform: scale(0.25);
 	-webkit-transform-origin: 0 0;
+	overflow: hidden;
 
 }
 
@@ -143,6 +144,7 @@ p {
 	right: 0;
 	bottom: 0;
 	width: 1440px;
+	overflow: hidden;
 
 }
 
@@ -186,6 +188,7 @@ p {
 	position: fixed !important;
 	width: 100vw !important;
 	height: 100vw !important;
+	overflow: hidden !important;
 	/*transition: .5s linear !important;*/
 
 }
