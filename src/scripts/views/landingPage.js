@@ -4,6 +4,7 @@ import ACTIONS from '../actions.js'
 import User from '../models/userModel.js'
 import Navbar from './components/navBar.js'
 import Footer from './components/footer.js'
+import SocialIcons from './components/socialIcons.js'
 
 var toDoDescription = false
 
@@ -84,6 +85,7 @@ const LandingPage = React.createClass({
 
 	 			</div>
 
+	 			<SocialIcons />
 	 			<WebDevPanel toDoDescription={this.state.toDoDescription} scoreDescription={this.state.scoreDescription} weatherDescription={this.state.weatherDescription}  />
 				<GraphicDesignPanel />
 				<Footer />
