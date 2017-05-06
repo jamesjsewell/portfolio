@@ -217,7 +217,7 @@ const WebDevPanel = React.createClass({
 							</div>
 
 							<div id="frame" className="frame">
-		 					<iframe className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
+		 					<iframe scrolling="no" className="theFrame center-align" src="https://gametally.herokuapp.com"></iframe>
 							</div>
 							<button data-target="modal1" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 							
@@ -245,7 +245,7 @@ const WebDevPanel = React.createClass({
 							</div>
 
 							<div id="frame" className="frame">
-		 					<iframe className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
+		 					<iframe scrolling="no" className="theFrame center-align" src="https://jamesjsewell.github.io/weather_app"></iframe>
 
 							</div>
 							<button data-target="modal2" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
@@ -273,7 +273,7 @@ const WebDevPanel = React.createClass({
 							</div>
 
 							<div id="frame" className="frame">
-		 					<iframe className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
+		 					<iframe scrolling="no" className="theFrame center-align" src="https://dothething.herokuapp.com/"></iframe>
 							</div>
 							<button data-target="modal3" className="btn-floating btn-large waves-effect waves-light view-button z-depth-5"><i className="material-icons">zoom_in</i></button>
 							
