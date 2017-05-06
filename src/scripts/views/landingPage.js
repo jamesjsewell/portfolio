@@ -157,13 +157,13 @@ const GraphicDesignPanel = React.createClass({
 
 		 					<div data-indicators={true} className="carousel card-content carousel-graphics col s12 m7">
 
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#one!"><img className="responsive-img carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#two!"><img className="responsive-img carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#three!"><img className="responsive-img carousel-graphic" src="images/your-lyrics.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#three!"><img className="responsive-img carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#four!"><img className="responsive-img carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#five!"><img className="responsive-img carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
-							    <a className="carousel-item carousel-item-graphics z-depth-5" href="#five!"><img className="responsive-img carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/A-Cut-Above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/reverse-a-cut-above.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/your-lyrics.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/Community-Arts-Center.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/envato-homepage-image.jpg" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/ironPongLogoWhiteV2.png" /></a>
+							    <a className="carousel-item carousel-item-graphics z-depth-5"><img className="responsive-img carousel-graphic" src="images/Mockup Tent - Copy/Tent3.png" /></a>
 
 							</div>
 
