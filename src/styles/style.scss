@@ -196,6 +196,7 @@ p {
 
 iframe.modal-content.center-align{
 	padding: .2rem !important;
+	overflow: hidden !important;
 }
 
 #modal1,#modal2,#modal3{
@@ -203,6 +204,7 @@ iframe.modal-content.center-align{
 	width: 100%;
 	height: 100%;
 	transition: .3s ease all;
+	overflow: hidden !important;
 
 	iframe{
 		text-align: center;
