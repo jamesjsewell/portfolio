@@ -31,7 +31,7 @@ const LandingPage = React.createClass({
 
 	componentDidMount: function() {
 
-		$('.carousel-graphics').carousel()
+		$('.carousel-graphics').carousel({dist: -100, padding: 20, fullWidth: false})
 		autoplay()   
 		function autoplay() {
 		    $('.carousel-graphics').carousel('next');
@@ -79,7 +79,7 @@ const LandingPage = React.createClass({
 	 				<div className='col s12 m6 offset-m3'>
 
 	 					<h2 className="transparent center-align white-text z-depth-5">JAMES SEWELL</h2>
-	 					<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer - Houston, Tx</h5>
+	 					<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer &nbsp; &bull; &nbsp; Houston, TX &nbsp; &bull; &nbsp; 512-667-8938</h5>
 
 	 				</div>
 
@@ -203,7 +203,7 @@ const WebDevPanel = React.createClass({
  					
  					<div className="z-depth-2 card grey darken-2">
 
- 						<h3 className="card-content flow-text white-text left-align-align">Web Development - Personal Projects</h3>
+ 						<h3 className="card-content flow-text white-text left-align-align">Web Development</h3>
 
  					</div>
 
@@ -227,6 +227,7 @@ const WebDevPanel = React.createClass({
 
 							<li>
       							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.scoreDescription ? 'remove' : 'add'}</i>description</div>
+      							<a href="https://gametally.herokuapp.com/#home">visit</a>
       							<div className="collapsible-body"><span className="flow-text">This is a communal score tracking app that I built for my final project as a student at The Iron Yard. The UI was designed using React, Materialize-CSS, and some custom SCSS. Although my focus is front end engineering, I did learn how to deploy my own database using mongodb and write an api for it in node.</span></div>
     						</li>
 							
@@ -256,6 +257,7 @@ const WebDevPanel = React.createClass({
 
 							<li>
       							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.weatherDescription ? 'remove' : 'add'}</i>description</div>
+      							<a href="https://jamesjsewell.github.io/weather_app/">visit</a>
       							<div className="collapsible-body"><span className="flow-text">My assignment here was to write an application that consumes the DarkSky API. The UI was designed using javascript and vanilla css.</span></div>
     						</li>
 							
@@ -283,6 +285,7 @@ const WebDevPanel = React.createClass({
 
 							<li>
       							<div className="collapsible-header grey darken-2 left-align"><i className="material-icons">{this.props.toDoDescription ? 'remove' : 'add'}</i>description</div>
+      							<a href="https://dothething.herokuapp.com/">visit</a>
       							<div className="collapsible-body"><span className="flow-text">This is my first attempt at creating a full stack app. The todo's are persistent and live in a mongo database that I wrote an API for using express for node. The UI was built using React and styled with scss</span></div>
     						</li>
 							

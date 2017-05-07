@@ -69,7 +69,6 @@ p {
 .carousel-graphics{
 
 	max-width: 100%;
-
 }
 
 .carousel-item-graphics{
@@ -267,8 +266,8 @@ iframe.modal-content.center-align{
 	text-align: center;
 	vertical-align: center;
 	
-	width: 4rem !important;
-	height: 4rem !important;
+	width: 3rem !important;
+	height: 3rem !important;
 
 	position: absolute;
 	left: 50%;
@@ -279,23 +278,28 @@ iframe.modal-content.center-align{
 	
 }
 
+.social_icons{
+	position: relative;
+}
+
 .social_icons_wrapper{
 	display: inline-block;
 }
 
 .phone_number_wrapper{
-	display: inline-block;
-	float: right;
+	top: 1%;
+	right: 5%;
+	position: absolute;
 	margin-right: .8rem;
 
 }
 
 .social_btn{
 	position: relative;
-	width: 5rem !important;
-	height: 5rem !important;
+	width: 4rem !important;
+	height: 4rem !important;
 	margin: .4rem !important;
-	border: .1rem solid white !important;
+	border: .2rem solid white !important;
 }
 
 
