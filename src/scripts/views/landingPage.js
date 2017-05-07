@@ -79,7 +79,8 @@ const LandingPage = React.createClass({
 	 				<div className='col s12 m6 offset-m3'>
 
 	 					<h2 className="transparent center-align white-text z-depth-5">JAMES SEWELL</h2>
-	 					<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer &nbsp; &bull; &nbsp; Houston, TX &nbsp; &bull; &nbsp; 512-667-8938</h5>
+	 					<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer &nbsp; &bull; &nbsp; Houston, TX</h5>
+	 					<h5 className="center-align white-text flow-text z-depth-5">512-667-8938</h5>
 
 	 				</div>
 
