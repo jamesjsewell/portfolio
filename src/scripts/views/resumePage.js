@@ -86,9 +86,13 @@ const ResumePage = React.createClass({
 
 	 				</div>
 
-					<div className="col s4 grey darken-3">
+					<div className="col s4 center-align grey darken-3">
 					
 						<InfoPanel />
+
+						<EducationPanel />
+
+						<HobbiesPanel />
 
 					</div>
 
@@ -97,10 +101,6 @@ const ResumePage = React.createClass({
 						<ExperiencePanel />
 
 						<SkillsPanel />
-
-						<EducationPanel />
-
-						<HobbiesPanel />
 
 					</div>
 					
@@ -142,20 +142,19 @@ const InfoPanel = React.createClass({
 
 		return(
 
- 			<div className='row container'>
-
- 				<p>james sewell</p>
-
- 				<ul className="collection">
- 					<li className="collection-item"><a href="https://www.jamesjsewell.co">www.jamesjsewell.co</a></li>
- 					<li className="collection-item"><a href="https://www.jamesjsewell.co/#portfolio">www.jamesjsewell.co/#portfolio</a></li>
- 					<li className="collection-item"><p>512-667-8938</p></li>
- 					<li className="collection-item"><a href="https://github.com/jamesjsewell">github.com/jamesjsewell</a></li>
- 					<li className="collection-item"><p>james@jamesjsewell.co</p></li>
- 					<li className="collection-item"><p>Houston, TX</p></li>
- 				</ul>
  				
- 			</div>
+ 				<div className='card center-align'>
+	 				<ul className="collection flow-text">
+	 					<li className="collection-item"><a href="https://www.jamesjsewell.co">www.jamesjsewell.co</a></li>
+	 					<li className="collection-item"><a href="https://www.jamesjsewell.co/#portfolio">www.jamesjsewell.co/#portfolio</a></li>
+	 					<li className="collection-item"><p>512-667-8938</p></li>
+	 					<li className="collection-item"><a href="https://github.com/jamesjsewell">github.com/jamesjsewell</a></li>
+	 					<li className="collection-item"><p>james@jamesjsewell.co</p></li>
+	 					<li className="collection-item"><p>Houston, TX</p></li>
+	 				</ul>
+ 				
+ 				</div>
+ 		
 
 		)
 
@@ -225,9 +224,11 @@ const SkillsPanel = React.createClass({
 
 				<div className='card grey darken-2 center-align'>
 
+
+
 					<ul className="flow-text collection">
 
-						<li class="collection-header"><h4>Graphic Design Skills</h4></li>
+						<li class="collection-header"><h5>Graphic Design</h5></li>
 
 						<li className="collection-item">
 							
@@ -271,151 +272,170 @@ const SkillsPanel = React.createClass({
 
 					</ul>
 
-					<ul className="flow-text collection">
+					<div className="col s6 m6">
 
-						<li class="collection-header"><h4>Front End Engineering Skills</h4></li>
+						<ul className="flow-text collection">
 
-						<li className="collection-item">
-							
-							<p>
-								Javascript
-							</p>
+							<li class="collection-header"><h5>Frontend Engineering</h5></li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									Javascript
+								</p>
 
-						<li className="collection-item">
-							
-							<p>
-								React.js
-							</p>
+							</li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									React.js
+								</p>
 
-						<li className="collection-item">
-							
-							<p>
-								Backbone.js
-							</p>
+							</li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									Backbone.js
+								</p>
 
-						<li className="collection-item">
-							
-							<p>
-								Underscore.js	
-							</p>
+							</li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									Underscore.js	
+								</p>
 
-						<li className="collection-item">
-							
-							<p>
-								CSS, SCSS, HTML, MaterializeCSS
-							</p>
+							</li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									CSS, SCSS, HTML, MaterializeCSS
+								</p>
 
-						<li className="collection-item">
-							
-							<p>
-								Wordpress
-							</p>
+							</li>
 
-						</li>
+							<li className="collection-item">
+								
+								<p>
+									Wordpress
+								</p>
 
-					</ul>
+							</li>
 
-					<ul className="flow-text collection">
+						</ul>
 
-						<li class="collection-header"><h4>Backend Engineering</h4></li>
+					</div>
 
-						<li className="collection-item">
-							
-							<p>
-								Mongoose
-							</p>
+					<div className="col s6 m6">
+						<ul className="flow-text collection">
 
-						</li>
+							<li class="collection-header"><h5>Backend Engineering</h5></li>
 
-						<li className="collection-item">
-							
-							<p>
-								MongoDB
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Mongoose
+								</p>
 
-						</li>
+							</li>
 
-						<li className="collection-item">
-							
-							<p>
-								Node.js, Express.js
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									MongoDB
+								</p>
 
-						</li>
+							</li>
 
-						<li className="collection-item">
-							
-							<p>
-								Python	
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Node.js, Express.js
+								</p>
 
-						</li>
+							</li>
 
-						<li className="collection-item">
-							
-							<p>
-								Postman
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Python	
+								</p>
 
-						</li>
+							</li>
 
-					</ul>
+							<li className="collection-item">
+								
+								<p>
+									Postman
+								</p>
 
-					<ul className="flow-text collection">
+							</li>
 
-						<li class="collection-header"><h4>Audio/Video Production</h4></li>
+						</ul>
 
-						<li className="collection-item">
-							
-							<p>
-								Adobe Premiere
-							</p>
+					</div>
 
-						</li>
+					<div className="col s12">
 
-						<li className="collection-item">
-							
-							<p>
-								Sony Vegas
-							</p>
+						<ul className="flow-text collection">
 
-						</li>
+							<li class="collection-header"><h5>Audio/Video Production</h5></li>
 
-						<li className="collection-item">
-							
-							<p>
-								Adobe After Effects
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Adobe Premiere
+								</p>
 
-						</li>
+							</li>
 
-						<li className="collection-item">
-							
-							<p>
-								Ableton Live	
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Sony Vegas
+								</p>
 
-						</li>
+							</li>
 
-						<li className="collection-item">
-							
-							<p>
-								Fl Studio
-							</p>
+							<li className="collection-item">
+								
+								<p>
+									Blender 3D
+								</p>
 
-						</li>
+							</li>
 
-					</ul>
+							<li className="collection-item">
+								
+								<p>
+									Adobe After Effects
+								</p>
+
+							</li>
+
+							<li className="collection-item">
+								
+								<p>
+									Ableton Live	
+								</p>
+
+							</li>
+
+							<li className="collection-item">
+								
+								<p>
+									Fl Studio
+								</p>
+
+							</li>
+
+						</ul>
+
+					</div>
 
 				</div>
 
@@ -432,8 +452,6 @@ const EducationPanel = React.createClass({
 	render: function(){
 
 		return(
-
- 	
 
 			<div className='column s12 center-align'>
 
