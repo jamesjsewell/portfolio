@@ -71,7 +71,20 @@ const ResumePage = React.createClass({
 			
 			return (
 
+
 				<div className="grey darken-4 row container resume-page-wrapper">
+
+					<div className='row'>
+
+	 					<div className='col s12 m6 offset-m3'>
+
+	 						<h2 className="transparent center-align white-text z-depth-5">JAMES SEWELL</h2>
+	 						<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer &nbsp; &bull; &nbsp; Houston, TX</h5>
+	 						<h5 className="center-align white-text flow-text z-depth-5">512-667-8938</h5>
+
+	 					</div>
+
+	 				</div>
 
 					<div className="col s4 grey darken-3">
 					
@@ -86,6 +99,8 @@ const ResumePage = React.createClass({
 						<SkillsPanel />
 
 						<EducationPanel />
+
+						<HobbiesPanel />
 
 					</div>
 					
@@ -130,6 +145,15 @@ const InfoPanel = React.createClass({
  			<div className='row container'>
 
  				<p>james sewell</p>
+
+ 				<ul className="collection">
+ 					<li className="collection-item"><a href="https://www.jamesjsewell.co">www.jamesjsewell.co</a></li>
+ 					<li className="collection-item"><a href="https://www.jamesjsewell.co/#portfolio">www.jamesjsewell.co/#portfolio</a></li>
+ 					<li className="collection-item"><p>512-667-8938</p></li>
+ 					<li className="collection-item"><a href="https://github.com/jamesjsewell">github.com/jamesjsewell</a></li>
+ 					<li className="collection-item"><p>james@jamesjsewell.co</p></li>
+ 					<li className="collection-item"><p>Houston, TX</p></li>
+ 				</ul>
  				
  			</div>
 
@@ -155,25 +179,25 @@ const ExperiencePanel = React.createClass({
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								produced marketing collateral for Asad Mecci, he is a performing and consulting hypnotherapist. My designs helped him secure venues for his live performances.
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								created product renderings for an Eccomerce website that sold custom banners and popup tents for a manufacturer in Australia 
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								currently exploring the Envato marketplace and producing content for creators on the platform. Envato is a collection of marketplaces that provide digital assets to creators	
-							</span>
+							</p>
 
 						</li>
 
@@ -207,41 +231,41 @@ const SkillsPanel = React.createClass({
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Adobe Photoshop
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Adobe Illustrator 
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Blender 3D	
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Microsoft Office	
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Drawing/Painting
-							</span>
+							</p>
 
 						</li>
 
@@ -253,49 +277,49 @@ const SkillsPanel = React.createClass({
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Javascript
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								React.js
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Backbone.js
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Underscore.js	
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								CSS, SCSS, HTML, MaterializeCSS
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Wordpress
-							</span>
+							</p>
 
 						</li>
 
@@ -307,41 +331,41 @@ const SkillsPanel = React.createClass({
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Mongoose
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								MongoDB
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Node.js, Express.js
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Python	
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Postman
-							</span>
+							</p>
 
 						</li>
 
@@ -353,41 +377,41 @@ const SkillsPanel = React.createClass({
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Adobe Premiere
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Sony Vegas
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Adobe After Effects
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Ableton Live	
-							</span>
+							</p>
 
 						</li>
 
 						<li className="collection-item">
 							
-							<span>
+							<p>
 								Fl Studio
-							</span>
+							</p>
 
 						</li>
 
@@ -421,17 +445,131 @@ const EducationPanel = React.createClass({
 
 					<li className="collection-item">
 						
-						<span>
+						<p>
 							Lee College 2016-16
-						</span>
+						</p>
 
 					</li>
 
 					<li className="collection-item">
 						
-						<span>
+						<p>
 							The Iron Yard 2017-17: Attended and graduated from a 12 week immersive course on all things front end engineering with javascript
-						</span>
+						</p>
+
+					</li>
+
+				</ul>
+
+			</div>
+			
+			</div>
+
+		)
+
+	}
+
+})
+
+const HobbiesPanel = React.createClass({
+
+	render: function(){
+
+		return(
+
+			<div className='column s12 center-align'>
+
+			<div className='card grey darken-2 center-align'>
+
+				<p>Hobbies</p>
+
+ 				<ul className="flow-text collection">
+
+					<li className="collection-item">
+						
+						<p>
+							Skateboarding
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Music Production
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Target Practice
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Game Design
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Listening to Music
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Programming
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Ping Pong
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Bowling
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Fishing
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Hiking
+						</p>
+
+					</li>
+
+					<li className="collection-item">
+						
+						<p>
+							Making Things
+						</p>
 
 					</li>
 
