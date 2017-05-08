@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Backbone from 'backbone'
 import init from './init'
 import LandingPage from './views/landingPage.js'
+import ResumePage from './views/resumePage.js'
 
 
 const app = function() {
@@ -12,6 +13,7 @@ const app = function() {
 		routes: {
 
 			'home': 'renderLandingPage',
+			'resume': 'renderResumePage',
 			'*splat': '_redirect'
 
 		},
@@ -23,6 +25,12 @@ const app = function() {
 		renderLandingPage: function(){
 
 			ReactDOM.render(<LandingPage />, document.querySelector('.page-container-for-app'))
+
+		},
+
+		renderResumePage: function(){
+
+			ReactDOM.render(<ResumePage />, document.querySelector('.page-container-for-app'))
 
 		},
 
