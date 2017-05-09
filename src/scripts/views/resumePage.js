@@ -71,10 +71,9 @@ const ResumePage = React.createClass({
 			
 			return (
 
-
 				<div className="row container resume-page-wrapper">
 
-					<div className="white-text grey">
+					<div className="white-text grey darken-3 z-depth-5">
 						
 						<div className='row'>
 
@@ -92,19 +91,38 @@ const ResumePage = React.createClass({
 						
 							<InfoPanel />
 
-							<EducationPanel />
-
-							<HobbiesPanel />
-
 						</div>
 
 						<div className="col s8 transparent z-depth-5">
 						
-							<ExperiencePanel />
 
-							<div className="card-content">
+								<ExperiencePanel />
+
 								<SkillsPanel />
+
+				
+						<div className="divider"></div>
+
+						<div className="row">
+
+							<div className="col s12 container center-align z-depth-5">
+
+
+								<div className="col s6 m6">
+								
+									<EducationPanel />
+
+								</div>
+
+								<div className="col s6 m6">
+
+									<HobbiesPanel />
+
+								</div>
+
 							</div>
+
+						</div>
 
 						</div>
 
@@ -145,21 +163,74 @@ const InfoPanel = React.createClass({
 	render: function(){
 
 		return(
+ 				
+			<div className='card center-align transparent z-depth-5'>	
 
- 				
- 				<div className='card center-align grey'>
-	 				<ul className="collection flow-text">
-	 					<li className="collection-item grey"><a className="white-text" href="https://www.jamesjsewell.co">www.jamesjsewell.co</a></li>
-	 					<li className="collection-item grey"><a className="white-text" href="https://www.jamesjsewell.co/#portfolio">www.jamesjsewell.co/#portfolio</a></li>
-	 					<li className="collection-item grey"><p>512-667-8938</p></li>
-	 					<li className="collection-item grey"><a className="white-text" href="https://github.com/jamesjsewell">github.com/jamesjsewell</a></li>
-	 					<li className="collection-item grey"><p>james@jamesjsewell.co</p></li>
-	 					<li className="collection-item grey"><p>Houston, TX</p></li>
-	 				</ul>
- 				
- 				</div>
+				<div className="divider"></div>
+
+					<div className="section">
+						
+						<h5>Website</h5>
+
+						<a className="white-text" href="https://www.jamesjsewell.co">www.jamesjsewell.co</a>
+
+					</div>
+
+				<div className="divider"></div>
+
+					<div className="section">
+
+						<h5>Portfolio</h5>
+
+						<a className="white-text" href="https://www.jamesjsewell.co/#portfolio">www.jamesjsewell.co/#portfolio</a>
+
+					</div>
+
+				<div className="divider"></div>
+
+					<div className="section">
+
+						<h5>Github</h5>
+
+						<a className="white-text" href="https://github.com/jamesjsewell">github.com/jamesjsewell</a>
+
+					</div>
+
+				<div className="divider"></div>
+
+				<div className="section">
+
+						<h5>Phone Number</h5>
+
+						<p>512-667-8938</p>
+
+					</div>
+
+				<div className="divider"></div>
+
+				<div className="section">
+
+					<h5>Email</h5>
+
+					<p>james@jamesjsewell.co</p>
+
+				</div>
+
+				<div className="divider"></div>
+				<div className="divider"></div>
+
+				<div className="section">
+
+					<h5>Location</h5>
+
+					<p>Houston, TX</p>
+
+				</div>
+
+				<div className="divider"></div>
+			
+			</div>
  		
-
 		)
 
 	}
@@ -172,17 +243,17 @@ const ExperiencePanel = React.createClass({
 
 		return(
 	
-			<div className='column s12 center-align card'>
+			<div className='column s12 center-align card transparent'>
 
-				<div className='grey center-align card-content'>
+				<div className='transparent center-align card-content z-depth-5'>
 
 					<h4 className='white-text'>Experience</h4>
 
-					<ul className="flow-text collection">
+					<ul className="flow-text collection transparent">
 
 						<li class="collection-header"><h5 className="white-text">Freelance Graphic Designer 2013-present</h5></li>
 
-						<li className="collection-item">
+						<li className="collection-item transparent">
 							
 							<p>
 								produced marketing collateral for Asad Mecci, he is a performing and consulting hypnotherapist. My designs helped him secure venues for his live performances.
@@ -190,7 +261,7 @@ const ExperiencePanel = React.createClass({
 
 						</li>
 
-						<li className="collection-item">
+						<li className="collection-item transparent">
 							
 							<p>
 								created product renderings for an Eccomerce website that sold custom banners and popup tents for a manufacturer in Australia 
@@ -198,7 +269,7 @@ const ExperiencePanel = React.createClass({
 
 						</li>
 
-						<li className="collection-item">
+						<li className="collection-item transparent">
 							
 							<p>
 								currently exploring the Envato marketplace and producing content for creators on the platform. Envato is a collection of marketplaces that provide digital assets to creators	
@@ -224,57 +295,38 @@ const SkillsPanel = React.createClass({
 
 		return(
 
-				<div className='center-align card-content grey'>
+				<div className='center-align card-content grey z-depth-5'>
 
-					<div className='grey center-align col s12'>
+					<div className="z-depth-5 card-content col s12">
+					<div className='center-align col s12'>
 
 						<h4 className="white-text card-content">Skills</h4>
 						
 						<div className="col s4 m4">
 
-							<ul className="flow-text white-text grey darken-1 collection">
+							<ul className="flow-text white-text transparent collection">
 
-								<li class="collection-header"><h5>Graphic Design</h5></li>
+								<li className="collection-header"><h5 className="flow-text card-title">Graphic Design</h5></li>
 
-								<li className="collection-item grey darken-4">
-									
-									<p>
-										Adobe Photoshop
-									</p>
+								<div className="chip">
+    								Adobe Photoshop
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Adobe Illustrator
+  								</div>
 
-								<li className="collection-item grey darken-4">
-									
-									<p>
-										Adobe Illustrator 
-									</p>
+  								<div className="chip">
+    								Blender 3D
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Microsoft Office
+  								</div>
 
-								<li className="collection-item grey darken-4">
-									
-									<p>
-										Blender 3D	
-									</p>
-
-								</li>
-
-								<li className="collection-item grey darken-4">
-									
-									<p>
-										Microsoft Office	
-									</p>
-
-								</li>
-
-								<li className="collection-item grey darken-4">
-									
-									<p>
-										Drawing/Painting
-									</p>
-
-								</li>
+  								<div className="chip">
+    								Drawing/Painting
+  								</div>
 
 							</ul>
 
@@ -284,55 +336,43 @@ const SkillsPanel = React.createClass({
 
 							<ul className="flow-text collection">
 
-								<li class="collection-header"><h5>Frontend Engineering</h5></li>
+								<li className="collection-header"><h5 className="flow-text card-title">Frontend Engineering</h5></li>
 
-								<li className="collection-item">
-									
-									<p>
-										Javascript
-									</p>
+								<div className="chip">
+    								Javascript
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								React.js
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										React.js
-									</p>
+  								<div className="chip">
+    								Backbone.js
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Underscore.js
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										Backbone.js
-									</p>
+  								<div className="chip">
+    								css
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								scss
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										Underscore.js	
-									</p>
+  								<div className="chip">
+    								HTML
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								MaterializeCSS
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										CSS, SCSS, HTML, MaterializeCSS
-									</p>
-
-								</li>
-
-								<li className="collection-item">
-									
-									<p>
-										Wordpress
-									</p>
-
-								</li>
+  								<div className="chip">
+    								Wordpress
+  								</div>
 
 							</ul>
 
@@ -340,114 +380,75 @@ const SkillsPanel = React.createClass({
 
 						<div className="col s4 m4">
 
-							<ul className="flow-text collection">
+							<ul className="flow-text collection transparent">
 
-								<li class="collection-header"><h5>Backend Engineering</h5></li>
+								<li className="collection-header"><h5 className="flow-text card-title">Backend Engineering</h5></li>
 
-								<li className="collection-item">
-									
-									<p>
-										Mongoose
-									</p>
+								<div className="chip">
+    								Mongoose
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								MongoDB
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										MongoDB
-									</p>
+  								<div className="chip">
+    								Node.js
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Express.js
+  								</div>
 
-								<li className="collection-item">
-									
-									<p>
-										Node.js, Express.js
-									</p>
+  								<div className="chip">
+    								Python
+  								</div>
 
-								</li>
-
-								<li className="collection-item">
-									
-									<p>
-										Python	
-									</p>
-
-								</li>
-
-								<li className="collection-item">
-									
-									<p>
-										Postman
-									</p>
-
-								</li>
+  								<div className="chip">
+    								Postman
+  								</div>
 
 							</ul>
 
 						</div>
 					</div>
 
-					<div className='grey container center-align col s12'>
+					<div className='container center-align col s12 card-content'>
 						
 						<div className="col s12">
 
 							<ul className="flow-text collection">
 
-								<li class="collection-header"><h5>Audio/Video Production</h5></li>
+								<li className="collection-header"><h5 className="flow-text card-title">Audio/Video Production</h5></li>
 
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Adobe Premiere
-									</p>
+								<div className="chip">
+    								Adobe Premiere
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Sony Vegas
+  								</div>
 
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Sony Vegas
-									</p>
+  								<div className="chip">
+    								Blender 3D
+  								</div>
 
-								</li>
+  								<div className="chip">
+    								Adobe After Effects
+  								</div>
 
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Blender 3D
-									</p>
+								<div className="chip">
+    								Ableton	Live
+  								</div>
 
-								</li>
-
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Adobe After Effects
-									</p>
-
-								</li>
-
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Ableton Live	
-									</p>
-
-								</li>
-
-								<li className="collection-item">
-									
-									<p className="flow-text">
-										Fl Studio
-									</p>
-
-								</li>
+  								<div className="chip">
+    								Fl Studio
+  								</div>
 
 							</ul>
 
 						</div>
+					</div>
 					</div>
 
 				</div>
@@ -466,25 +467,33 @@ const EducationPanel = React.createClass({
 
 			<div className='column s12 center-align'>
 
-			<div className='card grey center-align'>
+			<div className='card transparent center-align'>
 
-				<h5 className='grey darken-2 card-content'>Education</h5>
+				<h4>Education</h4>
 
- 				<ul className="flow-text collection">
+ 				<ul className="flow-text collection transparent">
 
-					<li className="collection-item">
+					<li className="collection-item transparent">
 						
-						<p>
-							Lee College 2016-16
-						</p>
+						<h5 className="flow-text">
+							Lee College
+						</h5>
+						<h4 className="flow-text">
+							2016
+						</h4>
 
 					</li>
 
-					<li className="collection-item">
+					<li className="collection-item transparent">
 						
-						<p>
-							The Iron Yard 2017-17: Attended and graduated from a 12 week immersive course on all things front end engineering with javascript
-						</p>
+						<h5 className="flow-text">
+							The Iron Yard
+						</h5>
+						<h4 className="flow-text">
+							2017
+						</h4>
+
+						<p>Attended and graduated from a 12 week immersive course on all things front end engineering with javascript</p>
 
 					</li>
 
@@ -508,10 +517,12 @@ const HobbiesPanel = React.createClass({
 
 			<div className='column s12 center-align'>
 
-			<div className='card grey center-align'>
+			<div className='card transparent center-align'>
 
-				<h5 className='card-content grey darken-1'>Hobbies</h5>
+				<h4 className='card-content transparent darken-1'>Hobbies</h4>
 
+				<ul>
+				
 				<div className="chip">
     				Skateboarding
   				</div>
@@ -555,6 +566,7 @@ const HobbiesPanel = React.createClass({
   				<div className="chip">
     				Making Things
   				</div>
+  				</ul>
 
 			</div>
 			
