@@ -36,7 +36,9 @@ const SocialIcons = React.createClass({
 		return (
 
 			<div className="social_icons transparent z-depth-5 row container center-align" >
+
 				<div className="social_icons_wrapper center-align">
+				
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="https://github.com/jamesjsewell"><img className="social_img responsive-img" src="images/social_icons/svg/github2.svg" /></a>
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="https://www.facebook.com/sewelljames"><img className="social_img responsive-img" src="images/social_icons/svg/facebook.svg" /></a>
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="https://www.linkedin.com/in/jamesjsewell"><img className="social_img responsive-img" src="images/social_icons/svg/linkedin.svg" /></a>
@@ -47,8 +49,8 @@ const SocialIcons = React.createClass({
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="https://plus.google.com/+JamesSewellDotCom"><img className="social_img responsive-img" src="images/social_icons/svg/googleplus.svg" /></a>
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="https://graphicriver.net/user/jamesjsewell"><img className="social_img responsive-img" src="images/social_icons/svg/envato.svg" /></a>
 					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn-floating transparent" href="mailto:jamesjosephsewell@gmail.com"><img className="social_img responsive-img" src="images/social_icons/svg/mail.svg" /></a>
-					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn transparent" href="#resume">resume</a>
-					
+					<a className="responsive-img social_btn waves-effect waves-light z-depth-5 btn transparent" href= {location.hash === "#resume" ? "#home" : "#resume"} >{location.hash === "#resume" ? "home" : "resume"}</a>
+			
 				</div>
 				
 			</div>

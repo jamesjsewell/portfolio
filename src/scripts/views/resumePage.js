@@ -71,62 +71,13 @@ const ResumePage = React.createClass({
 			
 			return (
 
-				<div className="row container resume-page-wrapper">
+				<div className="row container resume-page-wrapper center-align">
 
-					<div className="white-text grey darken-3 z-depth-5">
-						
-						<div className='row'>
-
-		 					<div className='col s12 m6 offset-m3'>
-
-		 						<h2 className="transparent center-align white-text z-depth-5">JAMES SEWELL</h2>
-		 						<h5 className="center-align white-text flow-text z-depth-5">Front-end Engineer &nbsp; &bull; &nbsp; Houston, TX</h5>
-		 						<h5 className="center-align white-text flow-text z-depth-5">512-667-8938</h5>
-
-		 					</div>
-
-		 				</div>
-
-						<div className="col s4 center-align z-depth-5">
-						
-							<InfoPanel />
-
-						</div>
-
-						<div className="col s8 transparent z-depth-5">
-						
-
-								<ExperiencePanel />
-
-								<SkillsPanel />
-
-				
-						<div className="divider"></div>
-
-						<div className="row">
-
-							<div className="col s12 container center-align z-depth-5">
-
-
-								<div className="col s6 m6">
-								
-									<EducationPanel />
-
-								</div>
-
-								<div className="col s6 m6">
-
-									<HobbiesPanel />
-
-								</div>
-
-							</div>
-
-						</div>
-
-						</div>
-
+					<div className="center-align col s12 container">
+						<SocialIcons className="center-align container" />
 					</div>
+
+					<embed className="resumePDF" src="images/resume.pdf" />
 				
 				</div>
 
